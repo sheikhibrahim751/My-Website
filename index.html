@@ -6,19 +6,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
  
-<body>
+<body class="dark">
     <header>
        <h1>Welcome</h1> 
     </header>
     
     <main>
-    <p>Hi my name is Ibrahim.I am form Faisalabad.I am doing job now.</p>
+   
     </main>
     <div class="button-container">
         <button>Follow me</button>
         <button>Unfollow</button>
     </div>
+    
+   <div class="box">
+       <p>hello</p> 
+    </div>
+    
+    <label class="switch">
+        <input type="checkbox"/>
+        <span class= "slider"></span>
+    </label>
+    
      
     
 </body>
+ <script>
+     const toggle = document.querySelector(".switch input");
+     toggle.addEventListener("change", function () {
+         document.body.classList.toggle("dark");
+     });
+ </script>
 </html>
