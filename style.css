@@ -1,51 +1,33 @@
-body {
-  background-color: lightblue;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h1 {
-  color: blue;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;
-  text-decoration: underline;
-}
-
-p {
-  margin-top: 80px;
-  color: red;
-  font-size: 18px;
-  text-align: center;
+.switch {
+  position: absolute;
   display: inline-block;
+  width: 60px;
+  height: 34px;
 }
-button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    display: inline-block;
-
+.switch input {
+  display: none;
 }
-button:active {
-  background-color: blue;
-}
-
-
-  
-.button-container {
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 50px;
-}
-.name {
-  border-top: none;
-  border-right: none;
+.slider {
+  position: absolute;
   border-radius: 50px;
-  width: 200px;
-  height: 30px;
-  margin-left: 67px;
-  font-weight: 900;
-  background: transparent;
-  outline: none;
-  }
+  inset: 0;
+  background-color: grey;
+}
+.slider::before {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  content:"";
+  background-color: white;
+  border-radius: 50%;
+  
+}
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+body.dark {
+  background-color: #111;
+  color: white;
+}
