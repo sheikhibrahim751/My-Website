@@ -40,7 +40,7 @@ body.dark .slider{
   background: black;
 }
 body.dark .slider::before {
-  background:black;
+  background: white;
 }
   
 .product {
