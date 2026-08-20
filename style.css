@@ -36,6 +36,13 @@ body.dark {
   background-color: black;
   color: white;
 }
+body.dark .slider{
+  background: black;
+}
+body.dark .slider::before {
+  background:black;
+}
+  
 .product {
       display: flex;
       gap: 20px;
